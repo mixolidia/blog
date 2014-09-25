@@ -1,3 +1,8 @@
 <h2>My ADA blog!</h2>
 
-Here is my lastest <a href="posts/myfirstblogpost" >post</a>.
+Here is my lastest <a href="posts/myfirstblogpost" >post</a>.<br />
+
+<% @post.each do |post| %>
+<a href="<%= post.url %>"> <%= post.title %> </a><br />
+
+<% end %>

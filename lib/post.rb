@@ -10,8 +10,8 @@ class Post
 
   def initialize(array)
     @title = array[-1].split(".")[0]
-    @url = "/post/#{@title}"
-    # @filename = 0
+    @url = "/posts/#{@title}"
+    # @filename = 0 no need no more
   end
 
   def self.all
