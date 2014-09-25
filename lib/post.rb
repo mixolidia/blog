@@ -6,8 +6,12 @@ class Post
   # Create an array of Post objects
   # with the attribute set
   # Post.all => [post, post] (returns array of post objects)
+  attr_accessor :title, :url# , :filename
+
   def initialize(array)
-    
+    @title = array[-1].split(".")[0]
+    @url = "/post/#{@title}"
+    # @filename = 0
   end
 
   def self.all
@@ -17,7 +21,7 @@ class Post
     # Dir.glob(*) using the splat will search for all files
     # Dir.glob("views/posts/*.erb") returns all files ending in .erb
     # ["views/posts/myfirstblogpost.erb", "views/posts/test.erb"]
-    Dir.glob("views/posts/*.erb").each do |filepath|
+    Dir.glob("views/posts/*.erb").collect do |filepath|
       a = filepath.split("/")
       new(a) #same as Post.new & self.new
     end
