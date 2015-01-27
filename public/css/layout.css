@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  margin:0;
+}
+
+body {
+  margin: 10px 10px 10px 10px;
+  /*background:linear-gradient(150deg, #b0e0e6, #ffefd5, #ffb6c1);*/
+  background:linear-gradient(150deg, #F8F7ED, #F3F1DE, #F5F3E4, #ffb6c1);
+	background-repeat:repeat-x;
+  background-color: #F8F7ED;
+  background-size:100% auto;
+  font-family: 'Pompiere', cursive;
+  }
+
+  html body {
+    min-height: 100%;
+  }
+
+.wrap {
+  width: 980px;
+  min-height: 100%;
+}
+
+.left_side{
+  margin: 50px 0 0 150px;
+  width: 200px;
+  height: 500px;
+  position: fixed;
+}
+
+header {
+  float: left;
+  text-align: right;
+  font-size: 4em;
+  color: #d32e56;
+  line-height: .7;
+  text-shadow: 8px 8px 0 rgba(50,0,255,0.5);
+  font-family: 'bomb_fontregular';
+}
+
+nav {
+  clear: right;
+  position: relative;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 1.5em;
+  height: 100px;
+}
+nav ul {
+  list-style-type: none;
+  line-height: 1.5;
+  text-align: right;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #333;
+}
+nav a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  font-family: 'Didact Gothic', sans-serif;
+  width: 740;
+  min-height: 100%;
+  margin: 100 0 0 0;
+  color:#000000;
+}
+
+hr {
+  /*decoration: none;*/
+}
+
+footer {
+  /*position:relative;*/
+  width:100%;
+  bottom: 0;
+}

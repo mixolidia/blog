@@ -1,8 +1,6 @@
-<h2>My ADA blog!</h2>
+<!-- Here is my lastest <a href="posts/2014-09-24/influences" >post</a>.<br /> -->
 
-Here is my lastest <a href="posts/myfirstblogpost" >post</a>.<br />
-
-<% @post.each do |post| %>
-<a href="<%= post.url %>"> <%= post.title %> </a><br />
+<% @post.each do |p| %>
+<a href="<%= p.url %>"> <%= p.title %> </a><br />
 
 <% end %>

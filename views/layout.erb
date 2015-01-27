@@ -1,15 +1,63 @@
-<head>
-  <link href="css/layout.css" rel="stylesheet">
-  <script src="js/blog.js"></script>
-</head>
-<h1>Welcome to Mixolidia's Blog</h1>
-<hr>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Where Ma Code At?!?</title>
 
-<a href="/" > Home </a> &nbsp;
-<!-- <a href="/posts/post" > Archive </a> &nbsp; -->
-<a href="/about-me" > About Me </a>
+    <link href="/css/reset.css" media="all" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/bomb_font_stylesheet.css" rel="stylesheet"  type="text/css" charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Pompiere|Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-<%= yield %>
+    <meta name="author" content"Mixolidia Gautreaux" />
+    <meta name="description" content="Mixolidia Gautreaux writes about her time at Ada Developers Academy.
+                                      At ADA, Mixolidia is learning Ruby, Rails, JavaScript, HTML, CSS; basically
+                                      all the tools to become a full-stack developer." >
+  </head>
+    <body>
+      <div class="wrap">
+        <div class="left_side">
+          <header>
+            <pre>
+            <h1>
+              Where Ma
+                Code At</h1>
+              </pre>
+          </header> <!-- header -->
 
-<hr>
-Copyright &copy;2014 Mixolidia Gautreaux
+              <nav>
+                <ul>
+                  <li><a href="/" > Home </a></li>
+                  <li><a href="/posts/post" > Posts </a></li>
+                  <li><a href="/resources" > Resources </a></li>
+                  <li><a href="/about-me" > About Me </a></li>
+                  <li><a href="#contact" > Contact </a></li>
+                </ul>
+              </nav>
+
+              <div class="socialmedia">
+
+              </div><!-- social media links -->
+
+        </div> <!--left_side -->
+
+            <div class="content">
+
+                <%= yield %>
+
+            </div> <!-- content -->
+
+        <div class="right_side">
+          <div class="search">
+              <!--include search form here -->
+          </div><!-- search -->
+        </div> <!-- right_side -->
+          <footer>
+          <hr>
+          Copyright &copy;2014 Mixolidia Gautreaux
+          </footer> <!-- footer -->
+      </div>    <!-- wrap -->
+      <script src="/js/jquery-2.1.1.min.js"></script>
+      <script src="/js/blog.js"></script>
+    </body>
+</html>
